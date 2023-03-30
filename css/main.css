@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+
+*,*::before,*::after{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+/* Variables */
+:root {
+    --tblue: #1D2E5C;
+    --tgold: #FFCD00;
+    --hover: #F8EAB0;
+    --accent: #3E444D;
+    --font-family: "Unbounded", sans-serif;
+
+  }
+
+
+  /* Nav */
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem ;
+    padding-right: 2rem ;
+    width: 100%;
+    background-color: var(--tblue);
+    margin-left: initial;
+
+  }
+
+  .indexnav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    /*padding-bottom: 40px;*/
+    padding-right: 80px;
+    width: 100%;
+    /*background-color: var(--tblue);*/
+    margin-left: initial;
+  }
+  .indexnav a{
+    color: white;
+  }
+  .indexnav .sm_icon{
+       filter: invert(0%) sepia(0%) saturate(16%) hue-rotate(228deg) brightness(94%) contrast(100%);
+
+  }
+  .indexnav.scrolled a:hover {
+    color: var(--hover);
+
+  }
+
+  .indexnav .burger-menu{
+        
+    background-color: white;
+    color: black;
+    
+  }
+  .indexnav.scrolled {
+    background: #171A1E;
+  }
+
+  .indexnav.scrolled a{
+    color: white;
+  }
+
+  .indexnav.scrolled .sm_icon{
+        
+    filter: invert(98%) sepia(2%) saturate(226%) hue-rotate(229deg) brightness(118%) contrast(100%);
+   /* filter: invert(0%) sepia(0%) saturate(16%) hue-rotate(228deg) brightness(94%) contrast(100%);*/
+
+    /* the height is adjusted automatically*/
+    
+  }
+
+  .indexnav.scrolled .burger-menu{
+        
+    background-color: var(--blk);
+    color: white;
+    
+  }
+
+  .indexnav.scrolled .sm_icon:hover{
+    color: #8EB8E5;
+    fill: #8EB8E5;
+    filter: invert(75%) sepia(10%) saturate(1296%) hue-rotate(173deg) brightness(94%) contrast(91%);
+
+
+}
+
+
+  
+
+  ul {
+    list-style-type: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 24px;
+  }
+
+  nav a{
+      color: white;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: var(--accent);
+  }
+
+  a:hover {
+    color: var(--hover);
+
+  }
+
+  .active {
+    color: var(--tgold)!important;
+    font-weight: bold;
+}
+
+    .burger-menu {
+    color: white;
+    font-size: 2rem;
+    border: 0;
+    margin-top: 4px;
+    background-color: var(--blk);
+    cursor: pointer;
+    display: none;
+    }
+
+nav h3{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.nav-button{
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 10px;
+    margin-top: -10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    vertical-align: top;
+
+}
+
+    .nav-button:hover{
+        background-color: #F8EAB0;
+    }
+
+.logo{
+   
+max-width: 70%;
+margin-left: 80px;
+}
+
+.nav-curve{
+    display: block;
+    position: sticky;
+    top: 105px;
+    left: 0;
+    z-index: 1;
+    
+}
+
+    .nav-curve-nonhome{
+        position: sticky;
+        top: 105px;
+        left: 0;
+    }
+    
+    .imagecontainer{
+        margin-top: 1em;
+        display: grid;
+        gap: 0px 0px;
+        grid-template-columns: auto auto auto;
+          
+    }
+
+
+    .containerimage{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px;
+        text-align: center;
+        justify-content: center;
+        max-width: 100%;
+        display: block;
+    }
+
+/*** BODY STUFF ****/
+body{
+    font-family: "Unbounded", sans-serif;
+    background-color: #1D2E5C;
+}
+
+
+/** Hero stuff for the first page **/
+.hero{
+    background-color: var(--tblue);
+    color: white;
+    padding-top: 24px;
+}
+
+    .hero-content{
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+
+.hero h3{
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 64px;
+}
+
+.primaryactionbutton{
+    background-color: white;
+    color: black; /* black text */
+    padding: 16px; /* button padding */
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 22%;
+
+}
+
+    .primaryactionbutton:hover{
+        background-color: #F8EAB0;
+    }
+
+    .primaryactionbutton a:hover{
+        color: var(--tblue);
+    }
+
+.accent{
+    font-weight: bold;
+    color: #3E444D;
+}
+
+
+.vector1{
+    position: absolute;
+    left: 784px;
+top: 20px;
+
+
+}
+
+.vector2{
+    position: absolute;
+    left: -124px;
+    top: 415px;
+}
+
+.wrapper{
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.colorwrapper{
+    background-color: white;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+}
+
+.widthrow{
+    margin-top: 64px;
+    grid-template-columns: 100%;
+}
+    .widthrow p{
+        margin-top: 16px;
+        font-weight: 300;
+    }
+
+
+.projectrow{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 45px;
+}
+
+    .project{
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
+
+        .project img{
+            border-radius: 8px;
+            max-width: 100%;
+            margin-bottom: 24px;
+        }
+
+        .project h5{
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+
+        .project-row{
+            margin-top: 64px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 24px;
+        }
+
+
+        .projectcard{
+            background-color: rgba(29, 46, 92, 0.25)            ;       
+            border-radius: 8px;
+            padding: 24px;
+            display:inline-block;
+            max-width: 50%;
+        }
+            .projectcard h3{
+                margin-top: 24px;
+            }
+
+            .projectcard p{
+                margin-top: 8px;
+            }
+
+            .projectcard img{
+                max-width: 100%;
+            }
+
+            .projectcard ul{
+                list-style-type: circle;
+                font-size: 16px;
+                margin-left: 16px;
+                font-weight: 300;
+                font-size: 20px;
+            }
+
+            .statuschipo{
+                display: inline-block;
+                height: 24px;
+                padding: 10px;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 8px;
+                margin-right:8px;
+                background-color: var(--tgold);
+                line-height: 6px;
+                margin-top: 16px;
+
+            }
+            .statuschippast{
+                display: inline-block;
+                height: 24px;
+                padding: 10px;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 8px;
+                margin-right:8px;
+                background-color: var(--tblue);
+                line-height: 6px;
+                margin-top: 16px;
+                color: white;
+            }
+
+.column{
+    float: left;
+   width: 50%;
+   margin-right: 64px;
+  }
+
+  .column p{
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .text-link{
+    font-weight: bold;
+    color: var(--tblue);
+    margin-top: 32px;
+  }
+
+  .about-projects{
+    padding-top: 60px;
+  }
+
+  .about-projects p{
+    font-size: 24px;
+    margin-top: 16px;
+  }
+
+  footer{
+    padding: 160px;
+  }
+
+  footer p{
+    font-size: 20px;
+    margin-top: 8px;
+  }
+
+  footer svg{
+    margin-right: 16px;
+  }
+
+  .margin-top{
+    margin-top: 64px;
+  }
+
+  .aboutpics{
+    max-width: 100%;
+  }
+
+  b{
+    font-weight: 500;
+  }
+
+  
+/***** Text Styles *****/
+h1{
+   
+    font-size: 48px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 24px; 
+}
+
+h4{
+    font-size: 24px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 300;
+}
