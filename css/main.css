@@ -524,6 +524,10 @@ p{
 
       }
 
+      li{
+        font-size: 14px;
+      }
+
       
 
       .hero h3{
@@ -573,7 +577,8 @@ p{
 
     .nav-curve-nonhome{
         top: 64px;
-        display: block;
+        display: none;
+    
     }
     
     .nav-curve-nonhome img{
